@@ -1,8 +1,40 @@
 .looking {
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: start;
     &-span {
-        font: $font-main;
+        font: $font;
         font-size: 14px;
         line-height: 2.14;
         color: $colorLigthBlue;
+    }
+    &-title {
+        font-family: RobotoSlab;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.25;
+        color: Black;
+        text-transform: capitalize;
+    }
+    &-text {
+        font-family: $font;
+        font-size: 18px;
+        line-height: 1.67;
+        color: $colorText;
+        margin-top: 20px;
+    }
+    &-buttom {
+        width: 76px;
+        height: 45px;
+        color: $colorOrange;
+        border: 2px solid $colorOrange;
+        border-radius: 22.5px;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 2.25;
+        text-align: center;
+        margin-top: 26px;
     }
 }
