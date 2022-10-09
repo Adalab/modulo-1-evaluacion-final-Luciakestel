@@ -21,7 +21,7 @@
   transform: translateY(185%);
 
   &-title {
-  font-family: 'RobotoSlab';
+  font-family: $fontSlab;
   font-size: 42px;
   font-weight: bold;
   line-height: 1.31;
@@ -32,6 +32,7 @@
   &-subtitle {
   font-family: $font;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.19;
   color: $colorWhite;
   text-align: center;
