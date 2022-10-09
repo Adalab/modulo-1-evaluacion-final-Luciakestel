@@ -1,8 +1,48 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  background-color: $colorDarkBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 20px;
+  &__arrow {
+    width: 45px;
+    height: 45px;
+    background-color: $colorWhite;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  &__nav-list {
+    margin-bottom: 30px;
+    &-element{
+      font-family: $font;
+      font-size: 16px;
+      line-height: 1.88;
+      text-align: center;
+      color: $colorWhite;
+      text-transform: uppercase;
+    }
+  }
+  &__copy {
+    font-family: $font;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: center;
+    color: $colorWhite;
+    margin-top: 32px;
+  }
+  &__component {
+    font-family: $font;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: center;
+    color: $colorWhite;
+    &-heart {
+      color: $colorOrange;
+    }
+  }
 }
