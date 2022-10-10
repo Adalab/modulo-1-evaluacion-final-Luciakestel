@@ -1,5 +1,5 @@
 .header {
-  background-image: url(../images/cover.jpeg) ;
+  background-image: url(../images/cover.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,32 +11,43 @@
   position: fixed;
   top: 0;
   padding: 7px;
-  }
+}
 
-.header-container{
+.header-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   transform: translateY(185%);
+  @media all and (min-width: 768px) {
+    transform: translateY(90%);
+  }
 
   &-title {
-  font-family: $fontSlab;
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 1.31;
-  color: $colorWhite;
-  text-transform: uppercase;
-  text-align: center;
+    font-family: $fontSlab;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.31;
+    color: $colorWhite;
+    text-transform: uppercase;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 1.33;
+    }
   }
   &-subtitle {
-  font-family: $font;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.19;
-  color: $colorWhite;
-  text-align: center;
-  margin-top: 15px;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.19;
+    color: $colorWhite;
+    text-align: center;
+    margin-top: 15px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 1.17;
+    }
   }
 }
 .container {
@@ -45,9 +56,18 @@
   height: 37px;
   border-radius: 50%;
   margin-top: 25px;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    width: 42.5px;
+    height: 45px;
+    margin-top: 10px;
+  }
   &-scroll-down {
     width: 20px;
     height: 20px;
-    transform: translate(40%,45%);
+    transform: translate(40%, 45%);
+    @media all and (min-width: 768px) {
+      transform: translate(50%, 70%);
+    }
   }
 }

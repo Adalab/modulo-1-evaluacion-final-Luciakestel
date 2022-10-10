@@ -1,61 +1,74 @@
 .reasons {
-    background-color: $backgroundColorReasons;
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
+  background-color: $backgroundColorReasons;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &-title {
+    font-family: $fontSlab;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+  }
+}
+.container-box-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  margin-top: 38px;
+
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
- 
-    &-title {
-        font-family: $fontSlab;
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 1.25;
-        text-transform: capitalize;
-        color: black;
-        text-align: center;
-    }
+  }
 }
-    .container-box {
+.container-box {
+  text-align: center;
 
-        &-title {
-        font-family: $fontSlab;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 1.67;
-        text-align: center;
-        margin-top: 49px;
-        margin-left: 68px;
-        margin-right: 68px;
+  &-title {
+    font-family: $fontSlab;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    text-align: center;
+    margin-top: 49px;
+    margin-left: 68px;
+    margin-right: 68px;
+    @media all and (min-width: 768px) {
+      margin: 20px;
     }
-        &-text {
-        font-family: $font;
-        font-size: 18px;
-        line-height: 1.67;
-        text-align: center;
-        margin-left: 70px;
-        margin-right: 70px;
-        }
-        
+  }
+  &-text {
+    font-family: $font;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 37px;
+    @media all and (min-width: 768px) {
+      margin: 20px;
     }
-    .container-button {
-        padding: 20px;
-        background-color: $colorOrange;
-        width: 184px;
-        height: 45px;
-        border-radius: 22.5px;
-        margin-top: 41px;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        margin: 51px auto;
-    
-        &-text {
-        font-family: $font;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 2.25;
-        text-align: center;
-        color: $colorWhite;
-        }
-    }
+  }
+}
+.container-button {
+  background-color: $colorOrange;
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  margin: 51px auto;
+
+  &-text {
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.25;
+    text-align: center;
+    color: $colorWhite;
+  }
+}
