@@ -41,5 +41,11 @@
     line-height: 2.25;
     text-align: center;
     margin-top: 26px;
+    transition: width 1s;
+    &:hover {
+      width: 200px;
+      border: 2px dotted $colorLigthBlue;
+      color: $colorDarkBlue;
+    }
   }
 }
