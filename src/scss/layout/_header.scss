@@ -5,6 +5,9 @@
   background-size: cover;
   height: 100vh;
   position: relative;
+  @media all and (min-width: 1280px) {
+    background-position-y: bottom;
+  }
 }
 .container-hamb {
   background-color: $colorBlue;
@@ -35,6 +38,10 @@
       font-size: 80px;
       line-height: 1.33;
     }
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      width: min-content;
+    }
   }
   &-subtitle {
     font-family: $font;
@@ -47,6 +54,9 @@
     @media all and (min-width: 768px) {
       font-size: 24px;
       line-height: 1.17;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 28px;
     }
   }
 }

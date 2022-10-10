@@ -24,6 +24,10 @@
       justify-content: space-evenly;
       transform: translateX(10%);
     }
+    @media all and (min-width: 768px) {
+      justify-content: space-evenly;
+      transform: translateX(10%);
+    }
     &-nav,
     &-nav2 {
       &-list {
@@ -50,7 +54,10 @@
       position: absolute;
       top: 0;
       transform: translateY(70%);
-      margin-left: 30px;
+      margin-left: 50px;
+    }
+    @media all and (min-width: 1280px) {
+      transform: translate(330%, 70%);
     }
     &-copy {
       font-family: $font;
@@ -68,5 +75,15 @@
         color: $colorOrange;
       }
     }
+  }
+}
+.footer__container-nav {
+  @media all and (min-width: 1280px) {
+    transform: translateX(120%);
+  }
+}
+.footer__container-nav2 {
+  @media all and (min-width: 1280px) {
+    transform: translateX(-120%);
   }
 }
