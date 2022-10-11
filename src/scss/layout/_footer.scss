@@ -37,12 +37,9 @@
   &__container {
     @media all and (min-width: 768px) {
       display: flex;
-      justify-content: space-evenly;
-      transform: translateX(10%);
+      justify-content: space-around;
     }
-    @media all and (min-width: 768px) {
-      justify-content: space-evenly;
-      transform: translateX(10%);
+    @media all and (min-width: 1280px) {
     }
     &-nav,
     &-nav2 {
@@ -56,6 +53,7 @@
           text-align: center;
           color: $colorWhite;
           text-transform: uppercase;
+          padding: 5px;
           @media all and (min-width: 768px) {
             text-align: start;
           }
@@ -73,7 +71,7 @@
       margin-left: 50px;
     }
     @media all and (min-width: 1280px) {
-      transform: translate(330%, 70%);
+      transform: translate(270%, 70%);
     }
     &-copy {
       font-family: $font;
@@ -94,12 +92,15 @@
   }
 }
 .footer__container-nav {
+  @media all and (min-width: 768px) {
+    margin-left: 200px;
+  }
   @media all and (min-width: 1280px) {
-    transform: translateX(120%);
+    margin-left: 500px;
   }
 }
 .footer__container-nav2 {
   @media all and (min-width: 1280px) {
-    transform: translateX(-120%);
+    margin-right: 300px;
   }
 }

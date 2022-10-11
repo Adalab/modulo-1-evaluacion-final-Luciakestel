@@ -11,6 +11,15 @@
     text-transform: capitalize;
     color: black;
     text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.73;
+    }
+    @media all and (min-width: 1280px) {
+      margin-top: 30px;
+      font-size: 32px;
+      line-height: 1.41;
+    }
   }
 }
 .container-box-list {
@@ -18,17 +27,18 @@
   grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
-  margin-top: 38px;
 
   @media all and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
+    margin-top: 38px;
+    margin-right: 20px;
   }
   @media all and (min-width: 1280px) {
-    margin-left: 95px;
-    margin-right: 95px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 .container-box {
@@ -45,6 +55,8 @@
     margin-right: 68px;
     @media all and (min-width: 768px) {
       margin: 20px;
+      font-size: 24px;
+      line-height: 1.25;
     }
   }
   &-text {
@@ -57,6 +69,8 @@
     margin-bottom: 37px;
     @media all and (min-width: 768px) {
       margin: 20px;
+      font-size: 20px;
+      line-height: 1.5;
     }
   }
 }
@@ -67,6 +81,13 @@
   border-radius: 22.5px;
   margin: 51px auto;
   transition: background-color 1s;
+  @media all and (min-width: 768px) {
+    width: 210px;
+  }
+  @media all and (min-width: 1280px) {
+    width: 255px;
+  }
+
   &:hover {
     background-color: greenyellow;
     border: 1px solid black;

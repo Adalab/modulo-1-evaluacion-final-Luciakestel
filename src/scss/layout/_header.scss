@@ -6,7 +6,7 @@
   height: 100vh;
   position: relative;
   @media all and (min-width: 1280px) {
-    background-position-y: bottom;
+    background-position-y: 130%;
   }
 }
 .container-hamb {
@@ -21,9 +21,12 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  transform: translateY(185%);
+  transform: translateY(195%);
   @media all and (min-width: 768px) {
-    transform: translateY(90%);
+    transform: translateY(75%);
+  }
+  @media all and (min-width: 1280px) {
+    transform: translateY(70%);
   }
 
   &-title {
@@ -54,9 +57,11 @@
     @media all and (min-width: 768px) {
       font-size: 24px;
       line-height: 1.17;
+      width: 23ch;
     }
     @media all and (min-width: 1280px) {
       font-size: 28px;
+      width: auto;
     }
   }
 }

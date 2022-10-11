@@ -10,111 +10,18 @@
   </head>
 
   <body>
-    <header class="header" id="hero">
-      <div class="container-hamb">
-        <a href="https://adalab.es" target="_blank">
-          <img
-            class="logo-hamb"
-            src="./assets/images/ico-menu.svg"
-            alt="icono-menu"
-            title="menu con enlace a la página de ADALAB"
-          />
-        </a>
-      </div>
-      <div class="header-container">
-        <h1 class="header-container-title">Anonymous proxy</h1>
-        <h3 class="header-container-subtitle">
-          In hac hanitasse platea dictumst.
-        </h3>
-        <div class="container">
-          <a href="./index.html#3Reasons">
-            <img
-              class="container-scroll-down"
-              src="./assets/images/ico-scroll-down.svg"
-              alt="flecha-abajo"
-              title="flecha hacia abajo"
-            />
-          </a>
-        </div>
-      </div>
-    </header>
+    <include src="./partials/header.html"
+     title="Anonymous proxy" subtitle="In hac hanitasse platea dictumst.">
+    </include>
     <main>
-      <section class="looking">
-        <span class="looking-span">Insomnia Tips</span>
-        <h2 class="looking-title">Looking through a window</h2>
-        <p class="looking-text">
-          Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis,
-          at lactus ex diam nec lectus. Vivamus semper sodales rutrum.
-        </p>
-        <p class="looking-button">Go</p>
-      </section>
-      <section class="reasons" id="3Reasons">
-
-        <h2 class="reasons-title">3 Reasons to purchase</h2>
-
-        <section class="container-box-list">
-
-          <div class="container-box">
-          <h3 class="container-box-title title1">Ut sed metus</h3>
-          <p class="container-box-text text1">Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-
-          <div class="container-box">
-          <h3 class="container-box-title title2">Curabitur ac erat</h3>
-          <p class="container-box-text text2">Mauris mattis urna quis lorem molestie.</p>
-          </div>
-
-          <div class="container-box">
-          <h3 class="container-box-title title3">Morbi dictum</h3>
-          <p class="container-box-text text3">Aliquam in dolor et dolor tincidunt.</p>
-          </div>
-
-          <div class="container-button">
-            <p class="container-button-text">More reasons</p>
-          </div>
-      </section>
+      <include src="./partials/section-one.html" span="Insomnia Tips"
+      title="Looking through a window" text="Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis,
+      at lactus ex diam nec lectus. Vivamus semper sodales rutrum." button="Go">
+      </include>
+     <include src="./partials/section-two.html" title="3 Reasons to purchase" button="More reasons">
+     </include>
     </main>
-    <footer class="footer">
-      <div class="footer__arrow"> <a href="./index.html#hero" class="footer__arrow-link"><img src="./assets/images/ico-arrow.svg" alt="arrow" title="arrow" class="footer__arrow-img"></a></div>
-      <div class="footer__container">
-        <nav class="footer__container-nav">
-          <ul class="footer__container-nav-list">
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav-list-element">Articles</li>
-            </a>
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav-list-element">Books</li>
-            </a>
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav-list-element">Events</li>
-            </a>
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav-list-element">Reasons</li>
-            </a>
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav-list-element">Tips</li>
-            </a>
-        
-          </ul>
-        </nav>
-        <nav class="footer__container-nav2" >
-          <ul class="footer__container-nav2-list">
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav2-list-element">Twitter</li>
-            </a>
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav2-list-element">Instagram</li>
-            </a>
-            <a href="https://adalab.es" class="link" target="_blank">
-              <li class="footer__container-nav2-list-element">Mastodon.social</li>
-            </a>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__text">
-        <span class="footer__text-copy">&copy;2022</span>
-        <p class="footer__text-component">We <span class="footer__text-component-heart">❤︎</span> components</p>
-      </div>
-    </footer>
+    <include src="./partials/footer.html" copy="&copy;2022">
+    </include>
   </body>
 </html>

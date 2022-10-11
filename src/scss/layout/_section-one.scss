@@ -4,15 +4,24 @@
   margin-right: 15px;
   margin-bottom: 45px;
   text-align: start;
+  @media all and (min-width: 768px) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   @media all and (min-width: 1280px) {
     margin-left: 275px;
     margin-right: 275px;
+    margin-top: 20px;
   }
   &-span {
     font-family: $font;
     font-size: 14px;
     line-height: 2.14;
     color: $colorLigthBlue;
+    @media all and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.88;
+    }
   }
   &-title {
     font-family: $fontSlab;
@@ -21,6 +30,14 @@
     line-height: 1.25;
     color: Black;
     text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.73;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
+      line-height: 1.41;
+    }
   }
   &-text {
     font-family: $font;
@@ -28,6 +45,10 @@
     line-height: 1.67;
     color: $colorText;
     margin-top: 20px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
   &-button {
     width: 76px;
@@ -42,6 +63,12 @@
     text-align: center;
     margin-top: 26px;
     transition: width 1s;
+    @media all and (min-width: 768px) {
+      width: 91px;
+    }
+    @media all and (min-width: 1280px) {
+      width: 160px;
+    }
     &:hover {
       width: 200px;
       border: 2px dotted $colorLigthBlue;
