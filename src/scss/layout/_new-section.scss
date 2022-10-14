@@ -1,0 +1,23 @@
+.new-section {
+  width: 100vw;
+  background-color: $colorOrange;
+  @media all and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorDarkBlue;
+  }
+  &__title {
+    color: $colorWhite;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      margin-left: 20px;
+    }
+  }
+  &__text {
+    color: $colorWhite;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      margin-right: 20px;
+    }
+  }
+}
