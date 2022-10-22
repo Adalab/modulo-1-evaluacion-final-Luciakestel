@@ -30,7 +30,6 @@
 
   @media all and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
     margin-top: 38px;
@@ -89,7 +88,7 @@
   }
 
   &:hover {
-    background-color: greenyellow;
+    background-color: #f5c05d;
     border: 1px solid black;
     transform: scale(1.5);
   }
@@ -98,7 +97,13 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 2.25;
-    text-align: center;
+    margin-left: 30px;
     color: $colorWhite;
+    @media all and (min-width: 768px) {
+      margin-left: 45px;
+    }
+    @media all and (min-width: 1280px) {
+      margin-left: 65px;
+    }
   }
 }
