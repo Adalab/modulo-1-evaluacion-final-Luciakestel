@@ -17,9 +17,6 @@
     display: flex;
     justify-content: center;
 
-    &-link {
-      align-self: center;
-    }
     &-img {
       @keyframes move {
         0% {
@@ -101,4 +98,15 @@
   @media all and (min-width: 1280px) {
     margin-right: 300px;
   }
+}
+.link {
+  align-self: center;
+  text-decoration: none;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: $colorWhite;
+  text-transform: uppercase;
+  padding: 5px;
 }
