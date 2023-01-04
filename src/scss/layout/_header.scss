@@ -3,10 +3,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .container-hamb {
   background-color: $colorBlue;
@@ -16,6 +12,7 @@
 }
 
 .header-container {
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
