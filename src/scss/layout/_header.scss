@@ -4,10 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
-  @media all and (min-width: 1280px) {
-    background-position-y: 130%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .container-hamb {
   background-color: $colorBlue;
@@ -21,13 +20,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  transform: translateY(195%);
-  @media all and (min-width: 768px) {
-    transform: translateY(75%);
-  }
-  @media all and (min-width: 1280px) {
-    transform: translateY(70%);
-  }
 
   &-title {
     font-family: $fontSlab;
